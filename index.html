@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/429fd697a2.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Permanent+Marker&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <title>gridOne</title>
+    <style>
+        .body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: white
+        }
+
+        .container {
+
+            justify-content: center;
+
+        }
+
+        .content-wrapper {
+
+            width: 100%;
+
+        }
+
+        .gridOne {
+            display: grid;
+
+            grid-template-columns: 2fr 2fr;
+            padding-top: 20px;
+            padding-left: 10PX;
+
+
+
+        }
+
+        .gridOne {
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: black;
+            background: hwb(0 93% 7%);
+
+
+
+        }
+
+        .gridTwo {
+
+            display: grid;
+            grid-template-rows: 30px;
+            grid-template-columns: 1fr 1fr 2fr;
+            height: 0%;
+            justify-items: normal;
+            margin-top: 30px;
+            padding-bottom: 0px;
+
+
+        }
+
+        .gridTwo .box-red {
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            background: red;
+
+        }
+
+        .gridTwo .box-blue {
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            background: blue;
+        }
+
+        .gridTwo .box-yellow {
+            font-size: 15px;
+            font-family: 'Courier New', Courier, monospace;
+            color: black;
+            background: yellow;
+        }
+
+        .gridTwo p {
+
+            margin-top: 2px;
+
+        }
+
+        .gridThree {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            margin-top: 30px;
+
+        }
+
+        .name-ice ´ {
+
+            height: 75px;
+            width: 500px;
+        }
+
+        .name-ice {
+
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: black;
+            background: hsla(0, 31%, 95%, 0.902);
+        }
+
+        .photo-ice img {
+            height: 225px;
+            width: 500px;
+            object-fit: cover;
+
+
+        }
+
+        .gridfour {
+            display: grid;
+            width: 500px;
+            margin-top: 30px;
+            background: rgb(55, 138, 7);
+        }
+
+        .fila-superior {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+        }
+
+        #fila-inferior {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        #fila-inferior {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+
+        }
+
+
+        .gridfour2 {
+            display: grid;
+
+            width: 500px;
+            height: 400px;
+            margin-top: 30px;
+            padding-left: 10px;
+            background: hsl(0, 7%, 95%);
+            ;
+        }
+
+        .gridFive {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 50px;
+            align-items: end;
+            padding-bottom: 10px;
+
+        }
+
+        .gridFive img {
+
+            height: 200px;
+            width: 200px;
+            object-fit: cover;
+
+        }
+
+        .gridSix {
+            display: grid;
+            grid-template-columns: 125px 375px;
+            align-content: center;
+            width: 510px;
+            height: 60px;
+            margin-top: 30px;
+            background: rgb(229, 228, 228);
+        }
+
+        .gridSix p {
+
+            font-size: 15px;
+            font-family: "Permanent Marker", sans-serif;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="gridOne">
+
+                <p>Hello World</p>
+                <p style="color: blue; font-size: 20px; font-family: 'Times New Roman', Times, serif;">My Fantastic
+                    Content
+                </p>
+            </div>
+
+            <div class="gridTwo">
+                <div class="box-red">
+                    <p>whatever</p>
+
+                </div>
+
+                <div class="box-blue">
+                    <p>text</p>
+
+                </div>
+
+                <div class="box-yellow">
+                    <p>I want</p>
+
+                </div>
+
+            </div>
+
+            <div class="gridThree">
+                <div class="name-ice">
+                    <p>The text Ichose is Awsome</p>
+                </div>
+
+                <div class="photo-ice">
+
+                    <img src="images/ice.jpg" alt="#">
+
+
+                </div>
+            </div>
+
+            <div class="gridfour">
+                <div class="fila-superior">
+                    <p> My Even More Awesome</p>
+                </div>
+                <div id="fila-inferior">
+
+                    <p>My left text</p>
+                    <p>My right text</p>
+                </div>
+
+
+            </div>
+
+            <div class="gridfour2">
+                <div class="fila-superior">
+                    <p> My Even More Awesome Text</p>
+                </div>
+                <div class="gridFive">
+                    <img src="images/lampara.jpg" alt="">
+                    <img src="images/camino.jpg" alt="">
+
+
+
+                </div>
+            </div>
+
+            <div class="gridSix">
+
+                <i class="fa-solid fa-earth-americas"></i>
+        
+                <p>MY AWESOME GOOGLE FONT IS APPLIED HERE</p>
+        
+        
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
